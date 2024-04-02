@@ -5,7 +5,8 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "start": "node  src/main.js"
   },
   "author": "group Glab",
   "license": "ISC",
