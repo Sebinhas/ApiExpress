@@ -1,1 +1,1 @@
-Juan Sebitas
+Para recibir los parametros del query, utilizamos el req.query, asi obtenemos todos los parametros de la consulta hecha.
