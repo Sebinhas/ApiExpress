@@ -5,6 +5,7 @@ const app = express();
 
 app.use('/tasks',tasks);
 app.use('/proyect',proyect);
+
 app.get('/', (req, res) => {
 	res.send('Bienvenidos a la Api de G-lab');
 })
