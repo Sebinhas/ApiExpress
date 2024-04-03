@@ -1,6 +1,10 @@
 import express from 'express';
+import tasks from './routers/tasks.js'
+import proyect from './routers/proyects.js'
 const app = express();
 
+app.use('/tasks',tasks);
+app.use('/proyect',proyect);
 app.get('/', (req, res) => {
 	res.send('Bienvenidos a la Api de G-lab');
 })
