@@ -1,10 +1,15 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 import tasks from './routers/tasks.js'
 import proyect from './routers/proyects.js'
+import miRuta from './routers/miRutaGabriela.js'
+
 const app = express();
 
-app.use('/tasks',tasks);
-app.use('/proyect',proyect);
+//app.use('/tasks',tasks);
+//app.use('/proyect',proyect);
+app.use(bodyParser.json())
+app.use('/gabriela',miRuta)
 
 app.get('/', (req, res) => {
 	res.send('Bienvenidos a la Api de G-lab');
@@ -18,7 +23,6 @@ app.get('/tareas', (req, res) => {
 app.get('/proyectos', (req, res) => {
 	res.send('Hola soy la ruta proyectos');
 })
-
 
 const PORT = 3000;
 
